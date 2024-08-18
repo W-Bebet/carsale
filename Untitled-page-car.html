@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária XYZ - Cupom de Desconto</title>
+    <style>
+        /* Estilos CSS (personalize conforme necessário) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .coupon {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Concessionária XYZ</h1>
+        <p>Economize 10% na compra do seu próximo carro!</p>
+        <img src="carro.jpg" alt="Carro">
+        <p>Para obter o desconto, clique na imagem acima e preencha o formulário.</p>
+        <form action="processa-formulario.php" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="submit" value="Obter Cupom" class="coupon" onclick="window.location.href='car-promo.html'">
+        </form>
+    </div>
+</body>
+</html>
+
